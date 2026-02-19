@@ -22,20 +22,25 @@ body{
   margin:0;
   font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background:var(--fundo);
-  -webkit-font-smoothing:antialiased;
+  color:#222;
 }
 
-/* IMAGEM TOPO RESPONSIVA */
+/* ===== IMAGEM TOPO PERFEITA ===== */
+
 .topo{
   width:100%;
-  height:177px;
-  background-image: url("https://jornal.usp.br/wp-content/uploads/2026/01/2026_campanha_calouros_usp_outdoor1.jpg");
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
+  max-height:520px;
+  overflow:hidden;
 }
 
-/* CABEÇALHO */
+.topo img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* ===== CABEÇALHO ===== */
+
 header{
   background:var(--verde-escuro);
   color:white;
@@ -64,14 +69,16 @@ header h2{
   font-size:14px;
 }
 
-/* CONTAINER */
+/* ===== CONTAINER ===== */
+
 .container{
   max-width:850px;
   margin:auto;
   padding:20px;
 }
 
-/* DIAS */
+/* ===== DIAS ===== */
+
 .dia{
   margin-top:30px;
   padding:12px;
@@ -87,7 +94,8 @@ header h2{
 .quinta{background:#74c69d;}
 .sexta{background:#95d5b2; color:#083d2b;}
 
-/* CARDS */
+/* ===== CARDS ===== */
+
 .card{
   background:white;
   margin-top:12px;
@@ -110,13 +118,14 @@ header h2{
 .local{
   margin-top:5px;
   font-size:14px;
-  color:#333;
+  color:#444;
 }
 
-/* BOTÃO */
+/* ===== BOTÃO ===== */
+
 button{
   margin-top:12px;
-  padding:10px;
+  padding:12px;
   width:100%;
   border:none;
   border-radius:8px;
@@ -132,7 +141,8 @@ button:hover{
   background:#081c15;
 }
 
-/* RODAPÉ */
+/* ===== RODAPÉ ===== */
+
 footer{
   text-align:center;
   padding:25px;
@@ -145,13 +155,9 @@ footer{
   margin-bottom:5px;
 }
 
-/* 🔹 RESPONSIVO CELULAR */
-@media (max-width: 600px){
+/* ===== RESPONSIVO ===== */
 
-  .topo{
-    height:40vh;
-    background-position:top center;
-  }
+@media (max-width:600px){
 
   header h1{
     font-size:16px;
@@ -178,10 +184,6 @@ footer{
     padding:13px;
   }
 
-  button{
-    padding:12px;
-  }
-
 }
 
 </style>
@@ -189,7 +191,10 @@ footer{
 
 <body>
 
-<div class="topo"></div>
+<!-- IMAGEM AGORA CORRETA -->
+<div class="topo">
+  <img src="https://jornal.usp.br/wp-content/uploads/2026/01/2026_campanha_calouros_usp_outdoor1.jpg" alt="Campanha Calouros USP">
+</div>
 
 <header>
 <h1>Escola Superior de Agricultura "Luiz de Queiroz" – USP</h1>
@@ -291,6 +296,7 @@ Ver no Google Maps
 
 </body>
 </html>
+
 
 
 
