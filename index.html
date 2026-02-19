@@ -14,19 +14,27 @@
   --fundo:#e9f5ee;
 }
 
+*{
+  box-sizing:border-box;
+}
+
 body{
   margin:0;
   font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background:var(--fundo);
+  -webkit-font-smoothing:antialiased;
 }
 
-/* IMAGEM TOPO VIA URL */
+/* IMAGEM TOPO RESPONSIVA */
 .topo{
   width:100%;
-  height:520px;
+  height:60vh;
+  min-height:250px;
+  max-height:520px;
   background-image: url("https://jornal.usp.br/wp-content/uploads/2026/01/2026_campanha_calouros_usp_outdoor1.jpg");
   background-size:cover;
   background-position:center;
+  background-repeat:no-repeat;
 }
 
 /* CABEÇALHO */
@@ -34,7 +42,7 @@ header{
   background:var(--verde-escuro);
   color:white;
   text-align:center;
-  padding:20px;
+  padding:20px 15px;
 }
 
 header h1{
@@ -55,6 +63,7 @@ header h2{
   padding:8px 14px;
   border-radius:8px;
   font-weight:bold;
+  font-size:14px;
 }
 
 /* CONTAINER */
@@ -87,6 +96,12 @@ header h2{
   padding:15px;
   border-radius:12px;
   box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  transition:0.2s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.12);
 }
 
 .horario{
@@ -112,6 +127,7 @@ button{
   font-weight:bold;
   cursor:pointer;
   transition:0.2s;
+  font-size:14px;
 }
 
 button:hover{
@@ -129,6 +145,45 @@ footer{
 .pato{
   font-size:20px;
   margin-bottom:5px;
+}
+
+/* 🔹 RESPONSIVO CELULAR */
+@media (max-width: 600px){
+
+  .topo{
+    height:40vh;
+    background-position:top center;
+  }
+
+  header h1{
+    font-size:16px;
+  }
+
+  header h2{
+    font-size:14px;
+  }
+
+  .data{
+    font-size:13px;
+  }
+
+  .container{
+    padding:15px;
+  }
+
+  .dia{
+    font-size:14px;
+    padding:10px;
+  }
+
+  .card{
+    padding:13px;
+  }
+
+  button{
+    padding:12px;
+  }
+
 }
 
 </style>
@@ -227,6 +282,7 @@ Ver no Google Maps
 Ver no Google Maps
 </button>
 </div>
+
 
 </div>
 
