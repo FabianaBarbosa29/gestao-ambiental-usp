@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1º Semestre - Gestão Ambiental ESALQ/USP</title>
+
+<style>
+
+:root{
+  --verde-escuro:#1b4332;
+  --verde-medio:#2d6a4f;
+  --verde-claro:#40916c;
+  --fundo:#e9f5ee;
+}
+
+body{
+  margin:0;
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background:var(--fundo);
+}
+
+/* IMAGEM TOPO VIA URL */
+.topo{
+  width:100%;
+  height:520px;
+  background-image: url("https://jornal.usp.br/wp-content/uploads/2026/01/2026_campanha_calouros_usp_outdoor1.jpg");
+  background-size:cover;
+  background-position:center;
+}
+
+/* CABEÇALHO */
+header{
+  background:var(--verde-escuro);
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+header h1{
+  margin:5px 0;
+  font-size:20px;
+}
+
+header h2{
+  margin:5px 0;
+  font-size:16px;
+  font-weight:normal;
+}
+
+.data{
+  margin-top:10px;
+  display:inline-block;
+  background:var(--verde-claro);
+  padding:8px 14px;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+/* CONTAINER */
+.container{
+  max-width:850px;
+  margin:auto;
+  padding:20px;
+}
+
+/* DIAS */
+.dia{
+  margin-top:30px;
+  padding:12px;
+  border-radius:10px;
+  color:white;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.segunda{background:#2d6a4f;}
+.terca{background:#40916c;}
+.quarta{background:#52b788;}
+.quinta{background:#74c69d;}
+.sexta{background:#95d5b2; color:#083d2b;}
+
+/* CARDS */
+.card{
+  background:white;
+  margin-top:12px;
+  padding:15px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.horario{
+  font-weight:bold;
+  color:var(--verde-escuro);
+}
+
+.local{
+  margin-top:5px;
+  font-size:14px;
+  color:#333;
+}
+
+/* BOTÃO */
+button{
+  margin-top:12px;
+  padding:10px;
+  width:100%;
+  border:none;
+  border-radius:8px;
+  background:var(--verde-escuro);
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+button:hover{
+  background:#081c15;
+}
+
+/* RODAPÉ */
+footer{
+  text-align:center;
+  padding:25px;
+  font-size:13px;
+  color:#333;
+}
+
+.pato{
+  font-size:20px;
+  margin-bottom:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topo"></div>
+
+<header>
+<h1>Escola Superior de Agricultura "Luiz de Queiroz" – USP</h1>
+<h2>Curso 517 – 36: Bacharelado em Gestão Ambiental</h2>
+<div class="data">23/02/2026 - INÍCIO DAS AULAS DO 1º SEMESTRE LETIVO</div>
+</header>
+
+<div class="container">
+
+<div class="dia segunda">SEGUNDA-FEIRA</div>
+
+<div class="card">
+<div class="horario">19h – 20h</div>
+<strong>CEN0140 - Geociência Ambiental</strong>
+<div class="local">Anfiteatro do Pavilhão da Agricultura</div>
+<button onclick="window.open('https://maps.app.goo.gl/xWeryFVaHHLULnhS9','_blank')">
+Ver no Google Maps
+</button>
+</div>
+
+<div class="card">
+<div class="horario">20h – 21h30</div>
+<strong>LCE0180 - Química Ambiental</strong>
+<div class="local">Sala 5 - Prédio da Química</div>
+<button onclick="window.open('https://maps.app.goo.gl/QJ9x7oHLRQSchWJW7','_blank')">
+Ver no Google Maps
+</button>
+</div>
+
+<div class="dia terca">TERÇA-FEIRA</div>
+
+<div class="card">
+<div class="horario">19h – 22h</div>
+<strong>LCE0130 - Cálculo Diferencial e Integral</strong>
+<div class="local">Sala 1 - Central de Aulas</div>
+<button onclick="window.open('https://maps.app.goo.gl/js1MtAsXYbzHXsfq7','_blank')">
+Ver no Google Maps
+</button>
+</div>
+
+<div class="dia quarta">QUARTA-FEIRA</div>
+
+<div class="card">
+<div class="horario">19h – 21h</div>
+<strong>LES0113 - Introdução às Ciências Sociais</strong>
+<div class="local">Depto. LES - Sala 11 - Pavilhão de Ciências Humanas</div>
+<button onclick="window.open('https://maps.app.goo.gl/sCsRGxZDTTxWhsTF9','_blank')">
+Ver no Google Maps
+</button>
+</div>
+
+<div class="card">
+<div class="horario">21h – 23h</div>
+<strong>LES0144 - Introdução à Economia</strong>
+<div class="local">Sala 211 - Bloco B (LES)</div>
+<button onclick="window.open('https://maps.app.goo.gl/LRkXpRUSnZ8gntHX9','_blank')">
+Ver no Google Maps
+</button>
+</div>
+
+<div class="dia quinta">QUINTA-FEIRA</div>
+
+<div class="card">
+<div class="horario">19h – 21h</div>
+<strong>LES0111 - Introdução à Gestão Ambiental</strong>
+<div class="local">Sala 227 - 1º andar - Pavilhão de Engenharia</div>
+<button onclick="window.open('https://maps.app.goo.gl/t8CwMgFwtKZc4M559','_blank')">
+Ver no Google Maps
+</button>
+</div>
+
+<div class="card">
+<div class="horario">21h15 – 22h45</div>
+<strong>LCE0180 - Química Ambiental</strong>
+<div class="local">Sala 5 - Prédio da Química</div>
+<button onclick="window.open('https://maps.app.goo.gl/cp5Ro22AN7AmZYsPA','_blank')">
+Ver no Google Maps
+</button>
+</div>
+
+<div class="dia sexta">SEXTA-FEIRA</div>
+
+<div class="card">
+<div class="horario">19h – 21h</div>
+<strong>LCB0109 - Biodiversidade Brasileira</strong>
+<div class="local">Anfiteatro da Fisiologia Vegetal - Pavilhão de Horticultura</div>
+<button onclick="window.open('https://maps.app.goo.gl/GHaSxboeU3kX37rg6','_blank')">
+Ver no Google Maps
+</button>
+</div>
+
+</div>
+
+<footer>
+<div class="pato">🦆</div>
+* Sábado é dia letivo.
+</footer>
+
+</body>
+</html>
